@@ -1,0 +1,19 @@
+{
+  "name": "Twitch Clips Improvements",
+  "version": "1.0.2",
+  "description": "Improves the Twitch clips experience by making sure chat continues scrolling, along with sizing the player to fit the screen better.",
+  "manifest_version": 2,
+  "permissions": ["tabs", "*://clips.twitch.tv/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://clips.twitch.tv/*"],
+      "js": ["jquery.js", "redirect.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+   "128": "icon128.png" 
+  }
+}
